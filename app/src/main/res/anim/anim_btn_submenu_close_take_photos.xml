@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="false"
+    android:fillEnabled="false">
+    <!--submenu animation for closing-->
+    <rotate
+        android:duration="50"
+        android:fromDegrees="180"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="4"
+        android:toDegrees="-180" />
+    <rotate
+        android:duration="200"
+        android:fromDegrees="0"
+        android:pivotX="190%"
+        android:pivotY="190%"
+        android:toDegrees="180" />
+    <translate
+        android:duration="5"
+        android:toXDelta="-140%"
+        android:toYDelta="-140%" />
+</set>

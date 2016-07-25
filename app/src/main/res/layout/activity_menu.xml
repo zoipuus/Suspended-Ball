@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font48" />
+
+    <ImageView
+        android:id="@+id/btn_user_center"
+        android:layout_width="@dimen/y40"
+        android:layout_height="@dimen/y40"
+        android:clickable="true"
+        android:layout_alignStart="@+id/btn_menu"
+        android:layout_alignLeft="@+id/btn_menu"
+        android:layout_alignBottom="@+id/btn_menu"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_user_center"/>
+
+    <ImageView
+        android:id="@+id/btn_find"
+        android:layout_width="@dimen/y40"
+        android:layout_height="@dimen/y40"
+        android:clickable="true"
+        android:layout_alignStart="@+id/btn_menu"
+        android:layout_alignLeft="@+id/btn_menu"
+        android:layout_alignBottom="@+id/btn_menu"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:focusable="false"
+        android:src="@drawable/ic_find" />
+
+    <ImageView
+        android:id="@+id/btn_take_photos"
+        android:layout_width="@dimen/y40"
+        android:layout_height="@dimen/y40"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:layout_alignStart="@+id/btn_menu"
+        android:layout_alignLeft="@+id/btn_menu"
+        android:layout_alignBottom="@+id/btn_menu"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/ic_take_photos" />
+
+    <com.zoipuus.animmenu.views.MyImageView
+        android:id="@+id/btn_menu"
+        android:layout_width="@dimen/y40"
+        android:layout_height="@dimen/y40"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:src="@drawable/ic_menu_nor" />
+
+</RelativeLayout>
